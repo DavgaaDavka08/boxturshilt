@@ -1,0 +1,37 @@
+* {
+  box-sizing: 0;
+  padding: 0;
+  margin: 0;
+}
+.box {
+  width: 300px;
+  height: 100px;
+
+  background-color: blue;
+}
+.parent {
+  display: block;
+  background-color: green;
+  height: 500px;
+}
+/* ^^^^^^^deerh zadgai bichiglel buyuu media gui bichiglel gar utsand zoriulagdsn baina^^^^^^^ */
+/* max-wit gedeg ni utsand maxsimundaa doooshlogdno oroostoi ymnuud dooshoo egnene */
+@media screen and (min-width: 900px) {
+  .box {
+    width: 300px;
+    height: 100px;
+    background-color: red;
+    transition: background-color 1s;
+
+    /* transition gedeg ni ooorch;loh gesen ug trasnition oo biceed yu oorchlohoo biceedd secund ogno */
+  }
+  .parent {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+/* min-wdth-----ni computeriiinh {egneee zuils hoyr tiiishee hajuu tiiishe bairlana "tatna" >>>>>>>>>> */
+/* ^^^^^^^^^deer media doter bichsen ni computert zor=riulagdsn baih ystoi^^^^^^^^^{zaaaval min-width tei baih yetoi} */
